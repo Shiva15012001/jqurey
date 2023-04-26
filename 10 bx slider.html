@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bx slider</title>
+    <!-- jqurey cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bx slider css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
+    />
+    <!-- bx slider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <style>
+      img {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+    <script>
+      $(function () {
+        $(".bxslider").bxSlider({
+          mode: "fade",
+          speed: 100,
+          pager: true,
+          controls: true,
+          auto: true,
+          autoHover: true,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="bxslider">
+      <div class="slider">
+        <img src="img1.jpg" alt="" />
+      </div>
+      <div class="slider">
+        <img src="img2.avif" alt="" />
+      </div>
+      <div class="slider">
+        <img src="img1.jpg" alt="" />
+      </div>
+      <div class="slider">
+        <img src="img2.avif" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
